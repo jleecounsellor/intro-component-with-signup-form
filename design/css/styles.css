@@ -1,0 +1,260 @@
+:root {
+  /* Primary */
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Green_Opacity: hsl(154, 59%, 51%, 80%);
+  /* Accent */
+  --Blue: hsl(248, 32%, 49%);
+  /* Neutral */
+  --Dark_Blue: hsl(249, 10%, 26%);
+  --Grayish_Blue: hsl(246, 25%, 77%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--Red);
+  background-image: url("../../images/bg-intro-desktop.png");
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h1, p, .offerBox span{
+  color: var(--White);
+}
+
+p {
+  font-weight: 400;
+}
+
+/* Containers */
+.container {
+  display: flex;
+  margin: 53px auto 0;
+  max-width: 1300px;
+  padding: 50px;
+  width: 80vw;
+}
+
+.leftCol {
+  flex: 1;
+  line-height: 1.2;
+  margin-top: 160px;
+  padding-right: 40px;
+}
+
+.rightCol {
+  flex: 1;
+  margin-top: 15px;
+}
+
+/* left column */
+.leftCol p {
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+/* right column */
+.offerBox span {
+  font-weight: bold;
+}
+
+.offerBox {
+  background-color: var(--Blue);
+  border-radius: 10px;
+  margin-top: 0;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+/* form */
+form {
+  background-color: var(--White);
+  border-radius: 10px;
+  height: 68%;
+  margin-top: 20px;
+  padding: 40px;
+}
+
+form div {
+  position: relative;
+}
+
+form, .offerBox {
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.16);
+}
+
+form p, button, .offerBox {
+  color: var(--Grayish_Blue);
+}
+
+form p {
+  margin: 10px 0 20px;
+  font-size: .65rem;
+  text-align: center;
+}
+
+input {
+  border: 1px solid var(--Grayish_Blue);
+  border-radius: 5px;
+  color: var(--Dark_Blue);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 55px;
+  margin: 0 auto 20px;
+  padding: 0 5%;
+  width: 90%;
+}
+
+input:focus {
+  outline: 1px solid var(--Blue);
+}
+
+input:blur {
+  border: solid var(--Blue) 0.5px;
+}
+
+form span {
+  color: var(--Red);
+  font-weight: bold;
+}
+
+/* button */
+button, .offerBox {
+  align-items: center;
+  border: 0;
+  font-size: .98rem;
+}
+
+.submitBtn {
+  background-color: var(--Green);
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px 1px hsl(154, 49%, 45%);
+  color: var(--White);
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  padding: 15px;
+  text-transform: uppercase;
+  width: 100%
+}
+
+.submitBtn:hover, .submitBtn:focus {
+  background-color: var(--Green_Opacity);
+  cursor: pointer;
+  outline: none;
+}
+
+/* Error */
+.errorIcon {
+  display: none;
+}
+
+img {
+  display: block;
+  position: absolute;
+  top: 17px;
+  right: 10px;
+}
+
+label {
+  color: var(--Red);
+  display: block;
+  font-size: .75rem;
+  font-style: italic;
+  bottom: 18px;
+  position: relative;
+  text-align: right;
+}
+
+.error {
+  border: 2px solid var(--Red);
+  color: var(--Red);
+}
+
+.error:focus {
+  border: 0;
+}
+
+form.submit-form ::-webkit-input-placeholder {
+  color: red;
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1000px) {
+  body, .submitBtn {
+    font-size: .8rem;
+    text-align: center;
+  }
+
+  body {
+    margin: 0;
+    background-image: url("../../images/bg-intro-mobile.png");
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+    margin-bottom: 18px;
+  }
+
+/* Containers */
+  .container {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 35px 0;
+  }
+
+  .container, .leftCol {
+    flex-wrap: wrap;
+    width: 325px;
+  }
+
+  .leftCol {
+    margin-top: 38px;
+    padding-right: 0;
+  }
+
+  .rightCol {
+    margin: 0;
+  }
+
+  /* left column */
+  .leftCol p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 25px 0 45px;
+  }
+
+  /* right column */
+
+  .offerBox {
+    margin-bottom: 15px;
+    padding: 20px 50px;
+  }
+
+  form {
+    padding: 25px;
+    height: 72%;
+  }
+  form p {
+    line-height: 1.8;
+    margin-bottom: 0;
+    padding: 0 30px 10px;
+  }
+
+}

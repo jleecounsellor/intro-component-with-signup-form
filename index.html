@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+  <link rel="stylesheet" type="text/css" href="design/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="leftCol">
+      <h1>Learn to code by watching others</h1>
+
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="rightCol">
+      <p class="offerBox"><span>Try it free 7 days </span> then $20/mo. thereafter</p>
+
+      <form method="post" id="form">
+        <div>
+          <input type="text" id="fName" placeholder="First Name" autocomplete="false">
+          <img src="images/icon-error.svg" class="errorIcon" alt="error" />
+          <label></label>
+        </div>
+        <div>
+          <input type="text" id="lName" placeholder="Last Name" autocomplete="false">
+          <img src="images/icon-error.svg" class="errorIcon" alt="error" />
+          <label></label>
+        </div>
+        <div>
+          <input type="email" id="email" placeholder="Email Address" autocomplete="false">
+          <img src="images/icon-error.svg" class="errorIcon" alt="error" />
+          <label></label>
+        </div>
+        <div>
+          <input type="password" id="password" placeholder="Password">
+          <img src="images/icon-error.svg" class="errorIcon" alt="error" />
+          <label></label>
+        </div>
+        <button type="submit" class="submitBtn">Claim your free trial</button>
+        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+      </form>
+
+    </div>
+  </div>
+    <script src="design/js/app.js"></script>
+</body>
+<footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Jamie C.</a>.
+  </p>
+</footer>
+</html>
