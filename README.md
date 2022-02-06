@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-[Solution URL](https://github.com/jleegunn/intro-component-with-signup-form)
-[Live Site URL](https://jleegunn.github.io/intro-component-with-signup-form/)
+- [Solution URL](https://github.com/jleegunn/intro-component-with-signup-form)
+- [Live Site URL](https://jleegunn.github.io/intro-component-with-signup-form/)
 
 ## My process
 
