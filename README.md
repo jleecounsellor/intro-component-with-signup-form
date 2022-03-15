@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/jleegunn/intro-component-with-signup-form)
-- [Live Site URL](https://jleegunn.github.io/intro-component-with-signup-form/)
+- [Solution URL](https://github.com/jleecounsellor/intro-component-with-signup-form)
+- [Live Site URL](https://jleecounsellor.github.io/intro-component-with-signup-form/)
 
 ## My process
 
@@ -95,4 +95,4 @@ const showError = (input, message) => {
 
 ## Author
 
-- Website - [Jamie Counsellor](tbd)
+- Website - [Jamie Counsellor](https://counsellorj.herokuapp.com/)
